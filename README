@@ -1,0 +1,11 @@
+Marigolds-old est un ancien thème de Leed. Son historique a été copié de Leed. Et ce présent fichier ajouté.
+
+Voici les commandes utilisées :
+
+git clone leed Leed-marigolds-old 
+cd Leed-marigolds-old
+git remote remove origin
+git tag -d v1.5 v1.6 v1.6.0 v1.6.1 v1.7 v1.8
+git filter-branch -f --subdirectory-filter templates/marigolds-old -- --all
+rm -rf .git/refs/original
+git push git@github.com:XXXXX/Leed-Marigolds-old.git master
